@@ -52,5 +52,9 @@ Return a single project `projectId` is required.
 ### codeship.getProjectBuildData(projectId, cb)
 Return build data in a single project `projectId` is required.
 
+## Related
+
+- [Codeshipbar](https://github.com/John-Lin/codeshipbar) - A menubar app of codeship show the building status.
+
 ## License
 MIT © [Che-Wei Lin](https://github.com/John-Lin)
