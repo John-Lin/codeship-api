@@ -2,7 +2,9 @@
 [![npm version](https://badge.fury.io/js/codeship.svg)](https://badge.fury.io/js/codeship)
 [![Build Status](https://travis-ci.org/John-Lin/codeship-api.svg?branch=master)](https://travis-ci.org/John-Lin/codeship-api)
 
-An better API wrapper for Codeship
+An better API wrapper for [Codeship](https://codeship.com/).
+
+[Codeship API Docs](https://codeship.com/documentation/integrations/api/)
 
 ## Install
 
@@ -12,11 +14,14 @@ With [npm](https://www.npmjs.com/) do:
 npm install codeship
 ```
 
+## How do I get a API key?
+After [sign up Codeship](https://codeship.com/registrations/new). You can get your API key on [your account page](https://codeship.com/user/edit).
+
 ## Example usage
 
 ```javascript
 'use strict';
-let Codeship = require('./index.js');
+let Codeship = require('codeship');
 let codeship = new Codeship('APIKEY');
 
 codeship.listProjects((err, results) => {
