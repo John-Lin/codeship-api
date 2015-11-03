@@ -1,0 +1,13 @@
+sudo: false
+language: node_js
+node_js:
+  - "5.0"
+  - "4.0.0"
+ env:
+ - [{secure: "key"}]
+before_script:
+  - npm install -g gulp mocha
+script: gulp spec
+branches:
+  only:
+    - master
